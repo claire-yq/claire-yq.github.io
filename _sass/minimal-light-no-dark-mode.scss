@@ -1,3 +1,10 @@
+$accent-color: #475b36;
+$text-color: #071c03;
+
+body {
+  background-color: #fef9eb;
+}
+
 .pub-row {
   display: flex; 
   align-items: center;}
@@ -7,7 +14,7 @@
   height:2.4rem;
   width:2.4rem;
   background-color:transparent;
-  color:#043361!important;
+  color: $text-color!important;
   border-radius:100%;
   text-align:center;
   font-size:1.15rem;
@@ -181,20 +188,25 @@ papertitle {
       width: 8.00em;
     }
 
+h1, h2, h3, h4, h5, h6 {
+  color: $accent-color;
+}
+
+p {
+  color: $text-color;
+}
+
 h3, h4, h5, h6 {
   font-weight: 600;
-  color:#043361;
   margin:0 0 20px;
 }
 
 h1 {
   font-weight: 500;
-  color:#043361;
   margin:0 0 20px;
 }
 
 h2 {
-  color:#043361;
   font-weight: 500;
   margin:2px 0px 15px;
   font-size: 157%;
@@ -213,8 +225,7 @@ h1 {
 }
 
 a {
-  color:#39c;
-  text-decoration:none;
+  color: $accent-color;
 }
 
 a:hover {
